@@ -1,1 +1,1 @@
-git clone https://github.com/username/repository.git "E:\Stuff"
+git clone https://github.com/dan-close/GitScript.git "E:\Stuff"
