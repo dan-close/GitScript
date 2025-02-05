@@ -1,7 +1,11 @@
 $dll = Get-FileHash 'Microsoft.Web.XmlTransform.dll' -Algorithm SHA256
 $png = Get-FileHash 'koala.png' -Algorithm SHA256
 
+Write-Host "DLL hash: $($dll.Hash)"
+Write-Host "PNG hash: $($png.Hash)"
+
 $ok = $true
+
 if ($dll.Hash -ne '9F9C25514D9B1137DE2946D18BE2D498F4C2006C89A03E1738173E8AC94E169E') {
     Write-Error "DLL file has a different hash: $($dll.Hash)"
     $ok = $false
